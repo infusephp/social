@@ -5,6 +5,11 @@ use app\users\models\User;
 
 class SocialMediaProfileTest extends \PHPUnit_Framework_TestCase
 {
+    public static function setUpBeforeClass()
+    {
+        include 'TestProfile.php';
+    }
+
     public function testPermissions()
     {
         $profile = new TestProfile(101);

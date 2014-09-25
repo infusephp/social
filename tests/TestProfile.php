@@ -1,7 +1,5 @@
 <?php
 
-namespace app\social\tests;
-
 use app\social\models\SocialMediaProfile;
 
 class TestProfile extends SocialMediaProfile
