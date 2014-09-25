@@ -1,6 +1,5 @@
 <?php
 
-use app\social\tests\TestProfile;
 use app\users\models\User;
 
 class SocialMediaProfileTest extends \PHPUnit_Framework_TestCase

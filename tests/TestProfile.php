@@ -1,6 +1,6 @@
 <?php
 
-use app\social\models\SocialMediaProfile;
+use \app\social\models\SocialMediaProfile;
 
 class TestProfile extends SocialMediaProfile
 {
