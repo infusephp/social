@@ -12,14 +12,14 @@ abstract class SocialMediaProfile extends Model
 
     protected function hasPermission($permission, Model $requester)
     {
-        if ($permission == 'create')
-
+        if ($permission == 'create') {
             return true;
+        }
 
         $idProp = $this->userPropertyForProfileId();
-        if (in_array($permission, ['view', 'edit']) && $this->id() == $requester->$idProp)
-
+        if (in_array($permission, ['view', 'edit']) && $this->id() == $requester->$idProp) {
             return true;
+        }
 
         return $requester->isAdmin();
     }
@@ -98,7 +98,7 @@ abstract class SocialMediaProfile extends Model
      *
      * @return string url
      */
-    abstract public function profilePicture( $size = 80 );
+    abstract public function profilePicture($size = 80);
 
     /**
      * Checks if InspireVive is authenticated for the profile
@@ -108,10 +108,10 @@ abstract class SocialMediaProfile extends Model
     abstract public function isLoggedIn();
 
     /**
-	 * Fetches the profile from the API
-	 *
-	 * @return array|false
-	 */
+     * Fetches the profile from the API
+     *
+     * @return array|false
+     */
     abstract public function getProfileFromApi();
 
     /**
@@ -123,8 +123,9 @@ abstract class SocialMediaProfile extends Model
      */
     public function refreshProfile(array $userProfile = [])
     {
-        if (count($userProfile) == 0)
+        if (count($userProfile) == 0) {
             $userProfile = $this->getProfileFromApi();
+        }
 
         $success = false;
 
@@ -154,12 +155,13 @@ abstract class SocialMediaProfile extends Model
         $profiles = static::findAll([
             'where' => [
                 'access_token <> ""',
-                'last_refreshed < ' . $staleDate ],
+                'last_refreshed < '.$staleDate, ],
             'limit' => $profile->numProfilesToRefresh(),
-            'sortBy' => 'last_refreshed DESC' ]);
+            'sortBy' => 'last_refreshed DESC', ]);
 
-        foreach ($profiles as $profile)
+        foreach ($profiles as $profile) {
             $profile->refreshProfile();
+        }
 
         return true;
     }
@@ -175,8 +177,9 @@ abstract class SocialMediaProfile extends Model
     protected function mapPropertiesFromApi(array $user_profile)
     {
         $info = [];
-        foreach ($this->apiPropertyMapping() as $modelProperty => $apiProperty)
+        foreach ($this->apiPropertyMapping() as $modelProperty => $apiProperty) {
             $info[ $modelProperty ] = U::array_value($user_profile, $apiProperty);
+        }
 
         return $info;
     }

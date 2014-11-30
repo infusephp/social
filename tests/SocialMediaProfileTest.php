@@ -12,7 +12,7 @@ class SocialMediaProfileTest extends \PHPUnit_Framework_TestCase
     public function testPermissions()
     {
         $profile = new TestProfile(101);
-        $user = new User;
+        $user = new User();
 
         $this->assertTrue($profile->can('create', $user));
         $this->assertFalse($profile->can('view', $user));
@@ -24,13 +24,13 @@ class SocialMediaProfileTest extends \PHPUnit_Framework_TestCase
         $this->assertTrue($profile->can('edit', $user));
     }
 
-	function testRefreshProfile()
-	{
-		$this->markTestIncomplete();
-	}
+    public function testRefreshProfile()
+    {
+        $this->markTestIncomplete();
+    }
 
-	function testRefreshProfiles()
-	{
-		$this->markTestIncomplete();
-	}
+    public function testRefreshProfiles()
+    {
+        $this->markTestIncomplete();
+    }
 }
