@@ -1,10 +1,12 @@
-framework-social [![Build Status](https://travis-ci.org/idealistsoft/framework-social.png?branch=master)](https://travis-ci.org/idealistsoft/framework-social)
+social
 ====================
 
-[![Coverage Status](https://coveralls.io/repos/idealistsoft/framework-social/badge.png)](https://coveralls.io/r/idealistsoft/framework-social) [![Latest Stable Version](https://poser.pugx.org/idealistsoft/framework-social/v/stable.png)](https://packagist.org/packages/idealistsoft/framework-social)
-[![Total Downloads](https://poser.pugx.org/idealistsoft/framework-social/downloads.png)](https://packagist.org/packages/idealistsoft/framework-social)
+[![Build Status](https://travis-ci.org/infusephp/social.png?branch=master)](https://travis-ci.org/infusephp/social)
+[![Coverage Status](https://coveralls.io/repos/infusephp/social/badge.png)](https://coveralls.io/r/infusephp/social)
+[![Latest Stable Version](https://poser.pugx.org/infuse/social/v/stable.png)](https://packagist.org/packages/infuse/social)
+[![Total Downloads](https://poser.pugx.org/infuse/social/downloads.png)](https://packagist.org/packages/infuse/social)
 
-Admin social module for Idealist Framework
+Admin social module for Infuse Framework
 
 ## Installation
 

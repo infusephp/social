@@ -1,8 +1,8 @@
 {
-	"name": "idealistsoft/framework-social",
-	"description": "Helper library for social media profiles on Idealist Framework",
+	"name": "infuse/social",
+	"description": "Helper library for social media profiles on Infuse Framework",
 	"type": "library",
-	"keywords": ["idealist","framework","social"],
+	"keywords": ["infuse","framework","social"],
 	"license": "MIT",
 	"authors": [
 		{
@@ -12,8 +12,8 @@
 		}
 	],
 	"support": {
-		"issues": "https://github.com/idealistsoft/framework-social/issues",
-		"source": "https://github.com/idealistsoft/framework-social"
+		"issues": "https://github.com/infusephp/social/issues",
+		"source": "https://github.com/infusephp/social"
 	},
     "autoload": {
         "psr-4": {"app\\social\\": "src/"}
@@ -22,8 +22,8 @@
 		"php": ">=5.4.0"
 	},
 	"require-dev": {
-		"idealistsoft/framework-bootstrap": "dev-master",
-		"idealistsoft/framework-auth": "dev-master",
+		"infuse/bootstrap": "dev-master",
+		"infuse/auth": "dev-master",
 		"satooshi/php-coveralls": "0.6.1",
 		"robmorgan/phinx": "~0.3"
 	},
