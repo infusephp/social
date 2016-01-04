@@ -23,7 +23,7 @@
 	},
 	"require-dev": {
 		"infuse/infuse": "~1.3",
-		"infuse/auth": "dev-master",
+		"infuse/auth": "~1.2",
 		"pulsar/pulsar": "~0.1",
 		"satooshi/php-coveralls": "0.6.1",
 		"robmorgan/phinx": "~0.5"
