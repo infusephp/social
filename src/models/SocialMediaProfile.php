@@ -2,10 +2,11 @@
 
 namespace app\social\models;
 
-use Infuse\Model;
 use Infuse\Utility as U;
+use Pulsar\ACLModel;
+use Pulsar\Model;
 
-abstract class SocialMediaProfile extends Model
+abstract class SocialMediaProfile extends ACLModel
 {
     public static $scaffoldApi;
     public static $autoTimestamps;
